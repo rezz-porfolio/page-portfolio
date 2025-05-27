@@ -3,6 +3,6 @@
   @include('components.welcomeComponent')
   @include('components.aboutComponent')
   @include('components.skillComponent')
-  @include('components.projectComponent')
+  @include('components.projectComponent', ['projects' => $projects])
   @include('components.contactComponent')
 @endsection

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en" class="light-style layout-wide customizer-hide" dir="ltr" data-theme="theme-default"
-    data-assets-path="{{ asset('dashboard') }} /" data-template="vertical-menu-template-free">
+    data-template="vertical-menu-template-free">
 
 <head>
     <meta charset="utf-8" />
@@ -80,12 +80,12 @@
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    {{-- <script>
-        @if ($errors->any())
+    <script>
+        @if ($errors->has('login'))
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: "{{ $errors->first() }}",
+                text: "{{ $errors->first('login') }}",
             });
         @endif
     </script>
@@ -98,7 +98,7 @@
                 timer: 1500,
             });
         @endif
-    </script> --}}
+    </script>
 </body>
 
 </html>

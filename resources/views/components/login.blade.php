@@ -6,20 +6,21 @@
                 <!-- Logo -->
                 <div class="app-brand justify-content-center mt-5">
                     <a href="index.html" class="app-brand-link gap-2">
-                        <span class="app-brand-text demo text-heading fw-semibold">Goods Warehouse</span>
+                        <span class="app-brand-text demo text-heading fw-semibold">REZZ</span>
                     </a>
                 </div>
                 <!-- /Logo -->
 
                 <div class="card-body mt-2">
-                    <h4 class="mb-2">Selamat Datang 👋</h4>
-                    <p class="mb-4">Login untuk mendapatkan pengalaman seru</p>
+                    <h4 class="mb-2">Welcome 👋</h4>
+                    <p class="mb-4">Login for dev your website rezz</p>
 
-                    <form id="formAuthentication" class="mb-3">
+                    <form id="formAuthentication" class="mb-3" action="{{ route('login.process') }}" method="POST">
+                        @csrf
                         <div class="form-floating form-floating-outline mb-3">
-                            <input type="text" class="form-control" id="email" name="email"
-                                placeholder="Masukan email kamu" autofocus required />
-                            <label for="email">Email / Username</label>
+                            <input type="text" class="form-control" id="username" name="username"
+                                placeholder="Input your username" value="{{ old('username') }}" autofocus required />
+                            <label for="username">Username</label>
                         </div>
                         <div class="mb-3">
                             <div class="form-password-toggle">

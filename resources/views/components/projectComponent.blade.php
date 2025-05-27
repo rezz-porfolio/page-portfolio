@@ -10,20 +10,25 @@
     <div class="container">
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <div class="portfolio-content h-100">
-                        <img src="https://mcuqjnbaxkglvxulfmvz.supabase.co/storage/v1/object/public/image//1748095298902-web_builder.png" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Shopify-Bliss</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="img/web_builder.png" title="App 1" data-gallery="portfolio-gallery-app"
-                                class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
+                @foreach ($projects as $project)
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                        <div class="portfolio-content h-100">
+                            <img src="https://mcuqjnbaxkglvxulfmvz.supabase.co/storage/v1/object/public/image/{{ $project['image'] }}"
+                                class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>{{ $project['title'] }}</h4>
+                                <p>{{ $project['language']}}</p>
+                                {{-- <a href="{{ $project['image_url'] ?? '#' }}" title="{{ $project['name'] }}"
+                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="{{ $project['link'] ?? '#' }}" title="More Details" class="details-link">
+                                    <i class="bi bi-link-45deg"></i> --}}
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
-            </div><!-- End Portfolio Container -->
+                @endforeach
+            </div>
 
         </div>
 
