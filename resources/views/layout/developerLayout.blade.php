@@ -316,6 +316,20 @@
         });
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Cek cookie login, misal cookie bernama 'laravel_session'
+            function getCookie(name) {
+                let value = "; " + document.cookie;
+                let parts = value.split("; " + name + "=");
+                if (parts.length === 2) return parts.pop().split(";").shift();
+            }
+
+            if (!getCookie('laravel_session') && !getCookie('XSRF-TOKEN')) {
+                window.location.href = '/';
+            }
+        });
+    </script>
 
 </body>
 

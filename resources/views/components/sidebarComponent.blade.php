@@ -12,8 +12,7 @@
     <div class="menu-inner-shadow"></div>
 
     <ul class="menu-inner py-1">
-        <!-- Dashboards -->
-        <li class="menu-item {{ request()->routeIs('dashboard') ? 'active' : '' }}">
+        <li class="menu-item ">
             @auth
                 <a href="{{ route('dashboard') }}" class="menu-link">
                     <i class="menu-icon tf-icons mdi mdi-home-outline"></i>
@@ -26,6 +25,7 @@
                 </a>
             @endauth
         </li>
+        {{-- <!-- Dashboards -->
 
         <!-- Products -->
         <li class="menu-item {{ request()->routeIs('products.view') ? 'active' : '' }}">
@@ -83,9 +83,9 @@
                     <div data-i18n="Layouts">Logs</div>
                 </a>
             @endauth
-        </li>
+        </li> --}}
 
-        @auth
+        {{-- @auth
             <li class="menu-item">
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
@@ -97,7 +97,7 @@
                 </form>
 
             </li>
-        @endauth
+        @endauth --}}
     </ul>
 
 </aside>
