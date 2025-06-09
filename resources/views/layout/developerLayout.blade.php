@@ -12,7 +12,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/img/favicon/favicon.ico') }}" />
+    <link rel="icon" type="image/x-icon" href="/dashboard/img/favicon/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,28 +20,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&ampdisplay=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="{{ asset('dashboard/vendor/fonts/materialdesignicons.css') }}" />
+    <link rel="stylesheet" href="/dashboard/vendor/fonts/materialdesignicons.css" />
 
     <!-- Menu waves for no-customizer fix -->
-    <link rel="stylesheet" href="{{ asset('dashboard/vendor/libs/node-waves/node-waves.css') }}" />
+    <link rel="stylesheet" href="/dashboard/vendor/libs/node-waves/node-waves.css" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="{{ asset('dashboard/vendor/css/core.css') }}" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="{{ asset('dashboard/vendor/css/theme-default.css') }}"
+    <link rel="stylesheet" href="/dashboard/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="/dashboard/vendor/css/theme-default.css"
         class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="{{ asset('dashboard/css/demo.css') }}" />
+    <link rel="stylesheet" href="/dashboard/css/demo.css" />
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="{{ asset('dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
-    <link rel="stylesheet" href="{{ asset('dashboard/vendor/libs/apex-charts/apex-charts.css') }}" />
+    <link rel="stylesheet" href="/dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="/dashboard/vendor/libs/apex-charts/apex-charts.css" />
 
     <!-- Page CSS -->
 
     <!-- Helpers -->
-    <script src="{{ asset('dashboard/vendor/js/helpers.js') }}"></script>
+    <script src="/dashboard/vendor/js/helpers.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="{{ asset('dashboard/js/config.js') }}"></script>
+    <script src="/dashboard/js/config.js"></script>
 </head>
 <style>
     .swal2-container {
@@ -92,23 +92,23 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-    <script src="{{ asset('dashboard/vendor/libs/jquery/jquery.js') }}"></script>
-    <script src="{{ asset('dashboard/vendor/libs/popper/popper.js') }}"></script>
-    <script src="{{ asset('dashboard/vendor/js/bootstrap.js') }}"></script>
-    <script src="{{ asset('dashboard/vendor/libs/node-waves/node-waves.js') }}"></script>
-    <script src="{{ asset('dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
-    <script src="{{ asset('dashboard/vendor/js/menu.js') }}"></script>
+    <script src="/dashboard/vendor/libs/jquery/jquery.js"></script>
+    <script src="/dashboard/vendor/libs/popper/popper.js"></script>
+    <script src="/dashboard/vendor/js/bootstrap.js"></script>
+    <script src="/dashboard/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="/dashboard/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="/dashboard/vendor/js/menu.js"></script>
 
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="{{ asset('dashboard/vendor/libs/apex-charts/apexcharts.js') }}"></script>
+    <script src="/dashboard/vendor/libs/apex-charts/apexcharts.js"></script>
 
     <!-- Main JS -->
-    <script src="{{ asset('dashboard/js/main.js') }}"></script>
+    <script src="/dashboard/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="{{ asset('dashboard/js/dashboards-analytics.js') }}"></script>
+    <script src="/dashboard/js/dashboards-analytics.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -135,7 +135,7 @@
             Swal.fire({
                 position: 'center',
                 icon: 'success',
-                title: '{{ session('success') }}',
+                title: '{{ session('success',
                 showConfirmButton: false,
                 timer: 1500
             });
@@ -148,7 +148,7 @@
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: '{{ session('error') }}',
+                text: '{{ session('error',
             })
         </script>
     @endif
@@ -158,7 +158,7 @@
             history.replaceState(null, null, ' ');
         } else if (window.performance && window.performance.navigation.type === window.performance.navigation
             .TYPE_BACK_FORWARD) {
-            window.location.href = '{{ route('category.admin') }}';
+            window.location.href = '{{ route('category.admin';
         }
     </script> --}}
 
