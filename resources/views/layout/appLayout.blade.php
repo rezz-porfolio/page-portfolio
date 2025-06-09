@@ -9,8 +9,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    {{-- <link href="/landing/img/favicon.png" rel="icon"> --}}
-    {{-- <link href="/landing/img/apple-touch-icon.png" rel="apple-touch-icon"> --}}
+    {{-- <link href="{{ asset('landing/img/favicon.png') }}" rel="icon"> --}}
+    {{-- <link href="{{ asset('landing/img/apple-touch-icon.png') }}" rel="apple-touch-icon"> --}}
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -20,14 +20,14 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="/landing/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/landing/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="/landing/vendor/aos/aos.css" rel="stylesheet">
-    <link href="/landing/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="/landing/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="{{ asset('landing/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('landing/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('landing/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('landing/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('landing/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Main CSS File -->
-    <link href="/landing/css/main.css" rel="stylesheet">
+    <link href="{{ asset('landing/css/main.css') }}" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: FlexStart
@@ -55,17 +55,17 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="/landing/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/landing/vendor/php-email-form/validate.js"></script>
-    <script src="/landing/vendor/aos/aos.js"></script>
-    <script src="/landing/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="/landing/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="/landing/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="/landing/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="/landing/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{{ asset('landing/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('landing/vendor/php-email-form/validate.js') }}"></script>
+    <script src="{{ asset('landing/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('landing/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('landing/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ asset('landing/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('landing/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('landing/vendor/swiper/swiper-bundle.min.js') }}"></script>
 
     <!-- Main JS File -->
-    <script src="/landing/js/main.js"></script>
+    <script src="{{ asset('landing/js/main.js') }}"></script>
 
 </body>
 
