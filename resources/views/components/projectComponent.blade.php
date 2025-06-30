@@ -18,11 +18,8 @@
                             <div class="portfolio-info">
                                 <h4>{{ $project['title'] }}</h4>
                                 <p>{{ $project['language']}}</p>
-                                {{-- <a href="{{ $project['image_url'] ?? '#' }}" title="{{ $project['name'] }}"
-                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="{{ $project['link'] ?? '#' }}" title="More Details" class="details-link">
-                                    <i class="bi bi-link-45deg"></i> --}}
+                                <a href="{{ route('portfolio.details', ['id' => $project['project_id']]) }}" title="More Details" class="details-link">
+                                    <i class="bi bi-link-45deg"></i>
                                 </a>
                             </div>
                         </div>

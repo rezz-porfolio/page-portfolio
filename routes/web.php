@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DetailProjectController;
 use App\Http\Controllers\DevController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
@@ -23,3 +24,4 @@ Route::post('/login', [AuthController::class, 'login'])->name('login.process');
 
 Route::get('/dashboard-dev', [DevController::class, 'index'])->name('dashboard');
 
+Route::get('/portfolio-detail/{id}', [DetailProjectController::class, 'portfolioDetails'])->name('portfolio.details');

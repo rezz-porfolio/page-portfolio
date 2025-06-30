@@ -4,7 +4,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Contact Us</p>
+        <p>Contact Me</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -38,7 +38,7 @@
                             <div class="error-message"></div>
                             <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                            <button type="submit">Send Message</button>
+                            <button type="submit" disabled>Send Message</button>
                         </div>
 
                     </div>

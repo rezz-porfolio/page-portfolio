@@ -7,16 +7,19 @@ use Illuminate\Support\Facades\Http;
 
 class PageController extends Controller
 {
-    public function index()
-    {
-        // Ambil data dari Node.js API
-        $response = Http::get('https://server-portfolio-gamma.vercel.app/api/projects');
+public function index()
+{
+    $projectsResponse = Http::get('https://server-portfolio-gamma.vercel.app/api/projects');
+    $textsResponse = Http::get('https://server-portfolio-gamma.vercel.app/api/text');
 
-        $projects = $response->successful()
-            ? $response->json()['data']
-            : [];
+    $projects = $projectsResponse->successful()
+        ? $projectsResponse->json()['data']
+        : [];
 
-        // Kirim data ke view welcome.blade.php
-        return view("welcome", compact('projects'));
-    }
+    $texts = $textsResponse->successful()
+        ? $textsResponse->json()['data']
+        : [];
+
+    return view("welcome", compact('projects', 'texts'));
+}
 }
