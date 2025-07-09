@@ -10,7 +10,7 @@
             "dest": "/public/build/$1"
         },
         {
-            "src": "/(landing)/.*",
+            "src": "/(landing|img)/.*",
             "dest": "/public/$1"
         },
         {
