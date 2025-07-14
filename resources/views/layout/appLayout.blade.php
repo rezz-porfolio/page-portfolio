@@ -7,6 +7,18 @@
     <title>My Portfolio</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FKVS5KRCBQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FKVS5KRCBQ');
+    </script>
 
     <!-- Favicons -->
     <link href="{{ asset('landing/img/favicon.png') }}" rel="icon">
@@ -54,7 +66,7 @@
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
-   <!-- Vendor JS Files -->
+    <!-- Vendor JS Files -->
     <script src="{{ asset('landing/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('landing/vendor/php-email-form/validate.js') }}"></script>
     <script src="{{ asset('landing/vendor/aos/aos.js') }}"></script>

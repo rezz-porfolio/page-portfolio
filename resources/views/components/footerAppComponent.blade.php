@@ -19,9 +19,9 @@
                 <p>Follow my social media accounts to see more</p>
                 <div class="social-links d-flex">
                     {{-- <a href=""><i class="bi bi-twitter-x"></i></a> --}}
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/ichika354"><i class="bi bi-github"></i></a>
+                    <a href="https://www.instagram.com/fchrz.0/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/m-fachriza-farhan-8572502a8/"><i class="bi bi-linkedin"></i></a>
                 </div>
             </div>
 

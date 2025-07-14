@@ -10,7 +10,7 @@
     <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
             <div class="col-lg-12">
-                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                <form action="" method="post" class="php-email-form" data-aos="fade-up"
                     data-aos-delay="200">
                     <div class="row gy-4">
 

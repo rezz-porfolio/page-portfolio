@@ -50,7 +50,7 @@
                         <ul>
                             <li><strong>Category</strong>: {{ $project['type'] ?? '-' }}</li>
                             <li><strong>Status</strong>: {{ $project['status'] ?? '-' }}</li>
-                            <li><strong>Language</strong>: {{ $project['language'] ?? '-' }}</li>
+                            <li><strong>Tech</strong>: {{ $project['language'] ?? '-' }}</li>
                             <li><strong>Project URL</strong>:
                                 <a href="{{ $project['link'] }}" target="_blank">{{ $project['link'] }}</a>
                             </li>
@@ -59,9 +59,7 @@
                     <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
                         <h2>{{ $project['title'] }}</h2>
                         <p>
-                            This project was built using <strong>{{ $project['language'] }}</strong>. It is a
-                            <strong>{{ $project['type'] }}</strong> project and is currently
-                            <strong>{{ $project['status'] }}</strong>.
+                            {{ $project['description'] }}
                         </p>
                     </div>
                 </div>
