@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DetailProjectController;
 use App\Http\Controllers\DevController;
 use App\Http\Controllers\PageController;
@@ -21,6 +22,7 @@ Route::get('/', [PageController::class, 'index'])->name('home');
 
 Route::get('/logindev', [AuthController::class, 'index'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.process');
+Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 
 Route::get('/dashboard-dev', [DevController::class, 'index'])->name('dashboard');
 

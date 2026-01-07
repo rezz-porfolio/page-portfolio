@@ -52,7 +52,7 @@
                             <li><strong>Status</strong>: {{ $project['status'] ?? '-' }}</li>
                             <li><strong>Tech</strong>: {{ $project['language'] ?? '-' }}</li>
                             <li><strong>Project URL</strong>:
-                                <a href="{{ $project['link'] }}" target="_blank">{{ $project['link'] }}</a>
+                                <a href="{{ $project['link'] }}" target="_blank">{{ $project['title'] }}</a>
                             </li>
                         </ul>
                     </div>

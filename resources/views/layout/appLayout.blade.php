@@ -75,6 +75,8 @@
     <script src="{{ asset('landing/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
     <script src="{{ asset('landing/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('landing/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     {{-- <script src="{{ asset('assets/vendor/libs/jquery/jquery.js') }}"></script> --}}
 
 
@@ -83,6 +85,28 @@
 
     <!-- Main JS File -->
     <script src="{{ asset('landing/js/main.js') }}"></script>
+
+    @if (session('success'))
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: '{{ session('success') }}',
+                confirmButtonColor: '#3085d6'
+            });
+        </script>
+    @endif
+
+    @if (session('error'))
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: '{{ session('error') }}',
+                confirmButtonColor: '#d33'
+            });
+        </script>
+    @endif
 
 </body>
 

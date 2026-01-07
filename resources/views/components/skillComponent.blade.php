@@ -47,6 +47,16 @@
                      </div> --}}
                  </div>
              </div><!-- End Stats Item -->
+             <div class="col-lg-3 col-md-6">
+                 <div class="stats-item d-flex align-items-center w-100 h-100">
+                     <img src="{{ asset('img/vue.png') }}" alt="" class="img-fluid" >
+                     {{-- <div>
+                         <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                             class="purecounter"></span>
+                         <p>Node JS</p>
+                     </div> --}}
+                 </div>
+             </div><!-- End Stats Item -->
 
          </div>
      </div>
